@@ -31,7 +31,9 @@ Paragraph default: 1.6
 - Shades: #cf711f
 - Accents:
 - Greys: 
-#6f6f6f
+#888
+#767676 lightest on #fff
+#6f6f6f lightest on #fdf2e9
 #555
 #333
 
@@ -106,6 +108,10 @@ body {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
@@ -236,6 +242,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {

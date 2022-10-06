@@ -17,7 +17,6 @@ allLinks.forEach(function (link) {
   link.addEventListener('click', function (event) {
     event.preventDefault()
     const href = link.getAttribute('href')
-    console.log(href)
 
     // Scroll back to top
     if (href === '#')
@@ -25,5 +24,14 @@ allLinks.forEach(function (link) {
         top: 0,
         behavior: 'smooth',
       })
+
+    // Scroll to other links
+    if (href !== '#' && href.startsWith('#')) {
+      const sectionEl = document.querySelector(href)
+      sectionEl.scrollIntoView({ behavior: 'smooth' })
+    }
+    // Close mobile navigation
+    if (link.classList.contains('main-nav-link'))
+      headerEl.classList.toggle('nav-open')
   })
 })

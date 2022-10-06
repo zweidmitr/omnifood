@@ -286,11 +286,11 @@ Instead, 1 rem = 1em = 16px */
   .cta-text-box {
     padding: 3.2rem;
   }
-}
 
-.cta-img-box {
-  height: 32rem;
-  grid-row: 1;
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
 }
 
 /* 
